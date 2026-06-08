@@ -1,0 +1,21 @@
+[project]
+name = "agent-flight-recorder"
+version = "0.1.0"
+description = "A tiny flight recorder for agent traces: capture workflow events, flag risky spans, and select cheap eval candidates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Agent Flight Recorder Contributors" }]
+keywords = ["ai-agents", "observability", "evals", "llm", "tool-calling"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+afr = "agent_flight_recorder.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

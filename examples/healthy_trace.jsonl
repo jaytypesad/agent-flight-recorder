@@ -1,0 +1,4 @@
+{"input":{"request":"Check the billing docs and report whether invoices can be exported."},"kind":"goal","metadata":{"tokens":60},"name":"user_goal","output":{"summary":"check billing docs and report invoice export support"},"run_id":"demo-run-002","step_id":"s001","timestamp_ms":1000}
+{"input":{"query":"billing docs invoice export"},"kind":"tool_call","metadata":{"tokens":110},"name":"web_search","output":{},"run_id":"demo-run-002","step_id":"s002","timestamp_ms":2000}
+{"input":{},"kind":"tool_result","metadata":{"tokens":260},"name":"web_search","output":{"text":"Billing docs mention invoices can be exported as CSV from account settings."},"run_id":"demo-run-002","step_id":"s003","timestamp_ms":3000}
+{"input":{},"kind":"assistant_message","metadata":{"tokens":170,"recovery":"true"},"name":"assistant","output":{"text":"The billing docs say invoices can be exported as CSV from account settings."},"run_id":"demo-run-002","step_id":"s004","timestamp_ms":4000}

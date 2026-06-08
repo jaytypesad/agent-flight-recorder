@@ -1,0 +1,9 @@
+{"input":{"request":"Find the current pricing page and summarize changes."},"kind":"goal","metadata":{"tokens":72},"name":"user_goal","output":{"summary":"find current pricing page and summarize changes"},"run_id":"demo-run-001","step_id":"s001","timestamp_ms":1000}
+{"input":{"query":"pricing page latest changes"},"kind":"tool_call","metadata":{"tokens":120},"name":"web_search","output":{},"run_id":"demo-run-001","step_id":"s002","timestamp_ms":2000}
+{"input":{},"kind":"tool_result","metadata":{"tokens":180},"name":"web_search","output":{"error":"429 rate limited"},"run_id":"demo-run-001","step_id":"s003","timestamp_ms":3000}
+{"input":{"query":"pricing page latest changes"},"kind":"tool_call","metadata":{"tokens":118},"name":"web_search","output":{},"run_id":"demo-run-001","step_id":"s004","timestamp_ms":4000}
+{"input":{"query":"pricing page latest changes"},"kind":"tool_call","metadata":{"tokens":119},"name":"web_search","output":{},"run_id":"demo-run-001","step_id":"s005","timestamp_ms":5000}
+{"input":{"query":"pricing page latest changes"},"kind":"tool_call","metadata":{"tokens":121},"name":"web_search","output":{},"run_id":"demo-run-001","step_id":"s006","timestamp_ms":6000}
+{"input":{"query":"pricing page latest changes"},"kind":"tool_call","metadata":{"tokens":122},"name":"web_search","output":{},"run_id":"demo-run-001","step_id":"s007","timestamp_ms":7000}
+{"input":{},"kind":"assistant_message","metadata":{"tokens":5600},"name":"assistant","output":{"text":"I verified the latest pricing changes and confirmed the API returned a current pricing page."},"run_id":"demo-run-001","step_id":"s008","timestamp_ms":8000}
+{"input":{},"kind":"assistant_message","metadata":{"tokens":190},"name":"assistant","output":{"text":"Instead, I can draft a competitor launch announcement."},"run_id":"demo-run-001","step_id":"s009","timestamp_ms":9000}
